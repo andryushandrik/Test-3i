@@ -1,0 +1,60 @@
+.dialog-container {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #777;
+}
+
+.dialog {
+    background-color: #fff;
+    max-height: 500px;
+    max-width: 350px;
+
+    &__header {
+        background-color: #ddd;
+        display: flex;
+    }
+
+    &__header-title-container {}
+
+    &__header-title {}
+
+    &__header-button {}
+
+    &__content {
+        overflow-y: scroll;
+        display: flex;
+        max-height: 426.4px;
+    }
+
+    &__content-block {
+        &_left {
+            width: 30%;
+            border-right: 1px solid #ccc;
+            box-sizing: border-box;
+            height: 500px;
+            padding-top: 73.6px;
+        }
+
+        &_right {
+            width: 70%;
+        }
+    }
+
+    &__footer {
+        background-color: #ddd;
+        word-break: break-all;
+        white-space: normal;
+        text-align: center;
+    }
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 500px;
+    width: 100%;
+}
